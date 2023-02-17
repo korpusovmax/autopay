@@ -3,3 +3,26 @@
   margin: 0;
 }
 
+body {
+  background: #161412;
+}
+
+nav {
+  margin: 30px 280px 0 30px;
+  .logo {
+    &__text {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      /* identical to box height */
+
+      letter-spacing: 0.05em;
+
+      /* Primary Green */
+
+      color: #96D068;
+    }
+  }
+}
