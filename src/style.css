@@ -7,19 +7,130 @@ body {
   background: #161412;
 }
 
-nav {
-  margin: 30px 280px 0 30px;
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(rgba(150, 208, 104, 0.4), rgba(150, 208, 104, 0) 50%);
+  background-position: bottom center;
 }
-nav .logo__text {
-  font-family: "Poppins";
-  font-style: normal;
+header nav {
+  width: auto;
+  margin: 30px 280px 70px 280px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+header nav .logo__text {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
   letter-spacing: 0.05em;
-  /* Primary Green */
   color: #96D068;
+}
+header nav .logo__text span {
+  color: #FFFFFF;
+}
+header nav .logo__img {
+  width: 44px;
+  height: 44px;
+  background-image: url("images/Logo.png");
+  background-size: cover;
+}
+header nav .link-group {
+  display: flex;
+  gap: 50px;
+  flex-wrap: nowrap;
+}
+header nav .link-group__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header nav .link-group__text_active {
+  color: #96D068;
+}
+header .header__title {
+  margin: 50px 280px 0 280px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 121.5%;
+  text-align: center;
+  color: #FFFFFF;
+}
+header .header__title_highlight {
+  color: #96D068;
+}
+header .product-demo {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+header .product-demo__text {
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+header .product-demo__image {
+  margin-top: 70px;
+  width: 934px;
+  height: 545px;
+  background-image: url("images/Group 1.png");
+  background-size: cover;
+}
+header .product-demo .button-group {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 70px;
+}
+
+.btn {
+  border: 0 solid;
+  border-radius: 10px;
+  padding: 13px 22px 13px 22px;
+}
+.btn__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.btn_coral {
+  align-self: center;
+  background-color: #FF6154;
+}
+.btn_green {
+  background-color: #96D068;
+}
+.btn_aqua {
+  background-color: #65B7E2;
+}
+
+main {
+  padding: 0 280px 0 280px;
+  margin-top: 148px;
 }
 
 /*# sourceMappingURL=style.css.map */
