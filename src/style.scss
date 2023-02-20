@@ -130,6 +130,39 @@ header {
 }
 
 main {
-  padding: 0 280px 0 280px;
+  padding: 0 200px 0 200px;
   margin-top: 148px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  .info-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__image {
+      min-width: 600px;
+      height: 600px;
+      background-image: url("images/image 1.png");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &__header {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 121.5%;
+      color: #FFFFFF;
+    }
+    &__description {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 121.5%;
+      color: #FFFFFF;
+    }
+  }
+  .info-block_reverse {
+    flex-direction: row-reverse;
+  }
 }
