@@ -130,23 +130,40 @@ header .product-demo .button-group {
 
 main {
   padding: 0 200px 0 200px;
-  margin-top: 148px;
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 main .info-block {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
   align-items: center;
 }
+main .info-block:nth-child(2n) {
+  grid-template-columns: 3fr 2fr;
+}
+main .info-block:nth-child(2n) .info-block__image {
+  order: 1;
+}
 main .info-block__image {
-  min-width: 600px;
   height: 600px;
   background-image: url("images/image 1.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+main .info-block:nth-child(2) .info-block__image {
+  background-image: url("images/image 2.png");
+}
+main .info-block:nth-child(3) .info-block__image {
+  background-image: url("images/image 3.png");
+}
+main .info-block:nth-child(4) .info-block__image {
+  background-image: url("images/image 4.png");
+}
+main .info-block:nth-child(5) .info-block__image {
+  background-image: url("images/image 5.png");
 }
 main .info-block__header {
   font-family: "Poppins", sans-serif;
@@ -161,9 +178,6 @@ main .info-block__description {
   font-size: 24px;
   line-height: 121.5%;
   color: #FFFFFF;
-}
-main .info-block_reverse {
-  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */
