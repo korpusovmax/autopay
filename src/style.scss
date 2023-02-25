@@ -59,6 +59,9 @@ header {
           color: #96D068;
         }
       }
+      &__text:hover {
+        text-decoration: underline;
+      }
     }
   }
   .header__title {

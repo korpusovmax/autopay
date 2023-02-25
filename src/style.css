@@ -61,6 +61,9 @@ header nav .link-group__text {
 header nav .link-group__text_active {
   color: #96D068;
 }
+header nav .link-group__text:hover {
+  text-decoration: underline;
+}
 header .header__title {
   margin: 50px 280px 0 280px;
   font-family: "Poppins", sans-serif;
